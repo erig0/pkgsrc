@@ -4,3 +4,5 @@ SHA1 (tmux-3.1b.tar.gz) = 52ab7bbc8f5c48955b170f2473f9515cc31653b5
 RMD160 (tmux-3.1b.tar.gz) = 10bd0c871da3fd9c450408c96bbc7231257e40e4
 SHA512 (tmux-3.1b.tar.gz) = fd5269f5f58ad20c35ece24af74035e622e16511baa331717bded5edcbfd46c1847fd86c02431a7d889ce7d5bec89c8177a680ca60e9ca821f13065d26ca7fa1
 Size (tmux-3.1b.tar.gz) = 561152 bytes
+SHA1 (patch-alerts.c) = b825c30d13a55efcdc4f926e4cb2b81053eee4f0
+SHA1 (patch-compat.h) = bee44eb311a6ff5fa64743d61867300303d9c65b
