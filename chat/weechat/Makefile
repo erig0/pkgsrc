@@ -25,7 +25,7 @@ CMAKE_ARGS+=	-DENABLE_GUILE=OFF
 CMAKE_ARGS+=	-DENABLE_TCL=OFF
 CMAKE_ARGS+=	-DENABLE_JAVASCRIPT=OFF
 CMAKE_ARGS+=	-DENABLE_PHP=OFF
-CMAKE_ARGS+=	-DENABLE_SPELL=OFF
+#CMAKE_ARGS+=	-DENABLE_SPELL=OFF
 CMAKE_ARGS+=	-DENABLE_CHARSET=ON
 CMAKE_ARGS+=	-DENABLE_MAN=ON
 CMAKE_ARGS+=	-DLOCALEDIR=${PKGLOCALEDIR}/locale
@@ -53,6 +53,7 @@ pre-configure:
 	# Use the standard cmake mechanism for finding Lua.
 	${RM} -f ${WRKSRC}/cmake/FindLua.cmake
 
+.include "../../textproc/aspell/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
