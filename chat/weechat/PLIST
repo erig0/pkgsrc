@@ -12,6 +12,7 @@ lib/weechat/plugins/fifo.so
 lib/weechat/plugins/fset.so
 lib/weechat/plugins/irc.so
 lib/weechat/plugins/logger.so
+lib/weechat/plugins/spell.so
 ${PLIST.lua}lib/weechat/plugins/lua.so
 ${PLIST.perl}lib/weechat/plugins/perl.so
 ${PLIST.python}lib/weechat/plugins/python.so
