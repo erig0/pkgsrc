@@ -188,6 +188,7 @@ SUBDIR+=	ruby-tzinfo
 SUBDIR+=	ruby-tzinfo-data
 SUBDIR+=	ruby-tzinfo1
 SUBDIR+=	saytime
+SUBDIR+=	snooze
 SUBDIR+=	sunclock
 SUBDIR+=	swisswatch
 SUBDIR+=	taskwarrior
