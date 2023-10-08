@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.92 2023/04/19 08:10:42 adam Exp $
 
 DISTNAME=	msmtp-1.8.23
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	https://marlam.de/msmtp/releases/
 EXTRACT_SUFX=	.tar.xz
@@ -33,6 +33,8 @@ LDFLAGS.SunOS+=		-lsocket -lnsl
 .PHONY: install-msmtp-scripts
 post-install: install-msmtp-scripts
 	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}
+	# remove .orig backup from patch
+	-${RM} ${DESTDIR}${PREFIX}/share/msmtp/msmtpq/*.orig
 	${INSTALL_DATA} ${WRKSRC}/doc/msmtprc-user.example ${DESTDIR}${EGDIR}
 
 .include "../../devel/gettext-lib/buildlink3.mk"

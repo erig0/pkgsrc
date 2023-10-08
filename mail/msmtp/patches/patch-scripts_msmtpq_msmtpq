@@ -1,0 +1,40 @@
+$NetBSD$
+
+--- scripts/msmtpq/msmtpq	2023-10-08 00:44:16.508911330 +0000
++++ scripts/msmtpq/msmtpq
+@@ -84,8 +84,8 @@ MSMTPQ_Q=${MSMTPQ_Q:-${Q:-~/.msmtp.queue
+ ##
+ ## the queue log file - export this variable to change where logs are stored  (but no quotes !!)
+ ##                      Set it to "" (empty string) to disable logging.
+-if [ ! -v MSMTPQ_LOG ] ; then
+-  if [ -v LOG ] ; then
++if [ -z "$MSMTPQ_LOG" ] ; then
++  if [ -n "$LOG" ] ; then
+     MSMTPQ_LOG="$LOG"
+   else
+     MSMTPQ_LOG=~/log/msmtp.queue.log
+@@ -205,13 +205,13 @@ connect_test() {
+     # would ping -qnc2 -w4 be better ?
+     # would ping -qnc1 -w10 or -w20 be better ?
+     #ping -qnc1 -w4 debian.org >/dev/null 2>&1 || return 1
+-    ping -qnc2 -w10 debian.org >/dev/null 2>&1 || return 1
++    ping -qnc2 debian.org >/dev/null 2>&1 || return 1
+ 
+   elif [ "$EMAIL_CONN_TEST" = 'P' ] ; then                     # use quicker ping test
+     # I personally think that including a DNS lookup
+     # is a better connection test but some
+     # have found the above test too slow
+-    ping -qnc1 -w4 8.8.8.8 >/dev/null 2>&1 || return 1
++    ping -qnc1 8.8.8.8 >/dev/null 2>&1 || return 1
+ 
+   elif [ "$EMAIL_CONN_TEST" = 'n' ] ; then                     # use netcat (nc) test
+     # must, of course, have netcat (nc) installed
+@@ -529,7 +529,7 @@ send_mail() {    # <-- all mail args ; m
+ ## -- entry point
+ #
+ 
+-[ -v LOG_LATER_ARGS ] && log "${LOG_LATER_ARGS[@]}"
++[ -n "$LOG_LATER_ARGS" ] && log "${LOG_LATER_ARGS[@]}"
+ if [ ! "$1" = '--q-mgmt' ] ; then    # msmtpq - sendmail mode
+   lock_queue                         # lock here
+   make_id                            # make base queue filename id for this mail
