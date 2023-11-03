@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/faketime
+lib/faketime/libfaketime.1.dylib
+share/doc/faketime/NEWS
+share/doc/faketime/README
+share/man/man1/faketime.1.gz
+@pkgdir man
