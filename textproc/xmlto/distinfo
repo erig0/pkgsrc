@@ -8,4 +8,5 @@ SHA1 (patch-format_docbook_txt) = 8d450200270b86efdea3b773fc5392db3b9c21b1
 SHA1 (patch-format_fo_dvi) = 4f47dc2e0b3b94ed2ddf2701d27c8813d0d38465
 SHA1 (patch-format_fo_pdf) = 301b96bf0f8b711cc115306d1b47f04cc6cd2d79
 SHA1 (patch-format_xhtml1_txt) = 6025023e7700375adbabee96dab99e6260b6e707
+SHA1 (patch-xmlif_xmlif.l) = 1d3f7d42fdc45c388c13fb9ced5e0d1e8bec6876
 SHA1 (patch-xmlto_in) = 4064e13bd53ddfc9a18f618d171d8b26bf182943
