@@ -14,6 +14,7 @@ LICENSE=	gnu-gpl-v2 # including special OpenSSL paragraph
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		ac_cv_prog_CPP=${CPP:Q}
+CFLAGS+=		-Wno-error=implicit-int
 
 PLIST_SRC=		${.CURDIR}/../../www/links/PLIST
 PATCHDIR=		${.CURDIR}/../../www/links/patches
