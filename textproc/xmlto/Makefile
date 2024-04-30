@@ -17,7 +17,7 @@ DEPENDS+=		libxml2>=2.6.2:../../textproc/libxml2
 
 USE_GCC_RUNTIME=	yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		mktemp
+USE_TOOLS+=		mktemp flex
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		GETOPT=${PREFIX}/bin/getopt
 CONFIGURE_ENV+=		BASH=${TOOLS_PATH.sh}
