@@ -1,6 +1,7 @@
 # $NetBSD: Makefile,v 1.100 2025/02/21 17:50:05 schmonz Exp $
 
 DISTNAME=		msmtp-1.8.28
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}releases/
 EXTRACT_SUFX=		.tar.xz
@@ -12,6 +13,7 @@ LICENSE=		gnu-gpl-v3
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
+TOOLS_PLATFORM.bash=
 USE_TOOLS+=		pkg-config msgfmt xgettext
 INFO_FILES=		yes
 
