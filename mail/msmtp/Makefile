@@ -13,6 +13,7 @@ LICENSE=		gnu-gpl-v3
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
+TOOLS_PLATFORM.bash=
 USE_TOOLS+=		pkg-config msgfmt xgettext
 INFO_FILES=		yes
 
