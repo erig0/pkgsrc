@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.104 2025/10/23 20:38:11 wiz Exp $
 
 DISTNAME=		msmtp-1.8.28
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}releases/
 EXTRACT_SUFX=		.tar.xz
@@ -33,6 +33,8 @@ CONF_FILES=		${EGDIR}/msmtprc-user.example \
 .include "options.mk"
 
 post-install: install-msmtp-scripts
+	# remove .orig backup from patch
+	-${RM} ${DESTDIR}${PREFIX}/share/msmtp/msmtpq/*.orig
 	${INSTALL_DATA} ${WRKSRC}/doc/msmtprc-user.example ${DESTDIR}${EGDIR}
 
 .include "../../devel/gettext-lib/buildlink3.mk"

@@ -3,3 +3,4 @@ $NetBSD: distinfo,v 1.50 2025/02/21 17:50:05 schmonz Exp $
 BLAKE2s (msmtp-1.8.28.tar.xz) = 3d67fc40dd169dfac0f283c724c80293114b29868fd4464f08e921eef483cc2f
 SHA512 (msmtp-1.8.28.tar.xz) = 4e02e984bed897d950b4ff66b5b759f05471a19f0074c604a68a8227cd6736ecce2c22ff5e00b12acf1cbd138920c7f032c5456edac9e013a432a8e293a0ae0d
 Size (msmtp-1.8.28.tar.xz) = 442768 bytes
+SHA1 (patch-scripts_msmtpq_msmtpq) = 941828b5d1d694a90587839618d085f3510e1fc2
