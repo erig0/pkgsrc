@@ -59,10 +59,10 @@ CONFIGURE_ARGS+=	--without-libsecret
 .if !empty(PKG_OPTIONS:Mscripts)
 REPLACE_BASH+=	scripts/find_alias/find_alias_for_msmtp.sh
 REPLACE_BASH+=	scripts/msmtpq/msmtp-queue
-REPLACE_SH+=	scripts/msmtpq/msmtpq
-REPLACE_SH+=	scripts/msmtpqueue/msmtp-enqueue.sh
-REPLACE_SH+=	scripts/msmtpqueue/msmtp-listqueue.sh
-REPLACE_SH+=	scripts/msmtpqueue/msmtp-runqueue.sh
+REPLACE_BASH+=	scripts/msmtpq/msmtpq
+REPLACE_BASH+=	scripts/msmtpqueue/msmtp-enqueue.sh
+REPLACE_BASH+=	scripts/msmtpqueue/msmtp-listqueue.sh
+REPLACE_BASH+=	scripts/msmtpqueue/msmtp-runqueue.sh
 REPLACE_BASH+=	scripts/set_sendmail/set_sendmail.sh
 PLIST.scripts=		yes
 USE_TOOLS+=		bash:run pax

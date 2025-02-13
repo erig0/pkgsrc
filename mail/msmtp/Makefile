@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.99 2024/11/14 22:20:38 wiz Exp $
 
 DISTNAME=	msmtp-1.8.23
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	mail
 MASTER_SITES=	https://marlam.de/msmtp/releases/
 EXTRACT_SUFX=	.tar.xz
@@ -13,7 +13,8 @@ LICENSE=	gnu-gpl-v3
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		pkg-config msgfmt xgettext
+TOOLS_PLATFORM.bash=
+USE_TOOLS+=		pkg-config msgfmt xgettext bash:run
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS.Darwin+=	--with-macosx-keyring
