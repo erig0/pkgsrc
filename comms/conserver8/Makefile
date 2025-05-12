@@ -1,10 +1,9 @@
 # $NetBSD: Makefile,v 1.30 2025/04/19 07:57:33 wiz Exp $
 #
 
-PKGVER=		8.2.4
+PKGVER=		8.2.7
 DISTNAME=	conserver-${PKGVER}
 PKGNAME=	conserver8-${PKGVER}
-PKGREVISION=	3
 CATEGORIES=	comms
 GITHUB_PROJECT=	conserver
 GITHUB_TYPE=	release
