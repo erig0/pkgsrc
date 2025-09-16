@@ -1,0 +1,5 @@
+This package contains the POSIX.1-2017 man pages (pages in sections
+except 0p, 1p, and 3p). Some more information is given in the
+`Announce' file.  Some background on UNIX standards, including
+POSIX, can be found in the standards(7) page provided as part of
+the separate Linux man-pages package.
