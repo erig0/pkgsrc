@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.5 2021/10/26 10:15:39 nia Exp $
+
+BLAKE2s (man-pages-posix-2017-a.tar.xz) = 2208d8c7597cfed35f66d2d45d5e482350e9b1c55321742072d84cccdfa7ade1
+SHA512 (man-pages-posix-2017-a.tar.xz) = dac6bd5bb3e1d5f8918bad3eb15e08eeb3e06ae160c04ccd5619bfb0c536139ac06faa62b6856656a1bb9a7496f3148e52a5227b83e4099be6e6b93230de211d
+Size (man-pages-posix-2017-a.tar.xz) = 935196 bytes
