@@ -1,0 +1,13 @@
+etc/merecat.conf
+man/man1/htpasswd.1
+man/man8/httpd.8
+man/man8/in.httpd.8
+man/man8/merecat.8
+man/man8/redirect.8
+man/man8/ssi.8
+sbin/htpasswd
+sbin/httpd
+sbin/in.httpd
+sbin/merecat
+share/doc/merecat/LICENSE
+share/doc/merecat/README.md
