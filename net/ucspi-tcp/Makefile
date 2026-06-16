@@ -21,6 +21,7 @@ SITES.${MANPAGES}=	http://smarden.org/pape/djb/manpages/
 CONFLICTS+=		ucspi-tcp6-[0-9]*
 
 FORCE_C_STD=		c89
+CPPFLAGS+= -D _XOPEN_SOURCE
 
 DJB_ERRNO_FIXUP=	error.h
 
