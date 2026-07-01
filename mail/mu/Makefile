@@ -10,6 +10,8 @@ HOMEPAGE=	https://www.djcbsoftware.nl/code/mu/
 COMMENT=	E-mail searching and indexing tools
 LICENSE=	gnu-gpl-v3
 
+PLIST_TYPE=dynamic
+
 MESON_ARGS+=	-Dinfodir=info
 MESON_ARGS+=	-Dlispdir=${EMACS_LISPPREFIX}
 USE_LANGUAGES=	c c++
