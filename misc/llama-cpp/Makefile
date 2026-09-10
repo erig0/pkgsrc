@@ -15,4 +15,5 @@ USE_CMAKE=	yes
 USE_LANGUAGES=	c c++
 USE_CXX_FEATURES+=	filesystem
 
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
