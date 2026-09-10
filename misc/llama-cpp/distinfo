@@ -1,0 +1,6 @@
+$NetBSD: distinfo,v 1.5 2021/10/26 10:59:21 nia Exp $
+
+BLAKE2s (llama-cpp-0.4.0.tar.gz) = ff45d6675a4970ac54f2496d31b984f8032e2dad28dc08a9bf5340af5af66701
+SHA512 (llama-cpp-0.4.0.tar.gz) = 12592516c0ac70ed53d64fc0c9f82bbb156defa507c7364f1a753eb29f3498e0e13a282e139c2eff7d2eb00921b4ef107b2fa90a5b66f8a3c45409d4fcb0834f
+Size (llama-cpp-0.4.0.tar.gz) = 37288249 bytes
+SHA1 (patch-pick.c) = cdce675828e0187cc9567aeec93893c9dbd14087
