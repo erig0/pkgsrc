@@ -9,7 +9,10 @@ HOMEPAGE=	https://llama.app/
 COMMENT=	LLM inference in C/C++
 LICENSE=	mit
 
+PLIST_TYPE=	dynamic
+
 USE_CMAKE=	yes
 USE_LANGUAGES=	c c++
+USE_CXX_FEATURES+=	filesystem
 
 .include "../../mk/bsd.pkg.mk"
